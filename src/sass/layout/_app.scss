@@ -1,0 +1,25 @@
+body{
+  box-sizing: border-box;
+  margin:0;
+}
+
+main{
+  display: flex;
+
+  >*{
+    width: 50%;
+  }
+}
+
+h1{
+  width: 100px;
+  font-size: 1em;
+}
+
+
+
+h2{
+  width: 300px;
+  font-size: 30px;
+  transition: width 2s;
+}

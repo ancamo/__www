@@ -47,6 +47,8 @@ function Subject () {
 
 Subject.prototype.addObserver = function ( observer ) {
   this.observers.add( observer );
+
+  console.log("wwww", this.observers)
 };
 
 Subject.prototype.removeObserver = function ( observer ) {
@@ -55,9 +57,7 @@ Subject.prototype.removeObserver = function ( observer ) {
 
 Subject.prototype.notify = function ( context ){
   var observerCount = this.observers.count();
-
-  console.log("observerCount", observerCount);
-
+  
   for(let i = 0; i < observerCount; i++ ){
     this.observers.get(i).update( context );
   }
@@ -107,6 +107,8 @@ function addNewObserver(){
   // Create a new checkbox to be added
   var check = document.createElement( "input" );
   check.type = "checkbox";
+
+  console.log()
  
   // Extend the checkbox with the Observer class
   extend( check, new Observer() );
@@ -114,7 +116,6 @@ function addNewObserver(){
   // Override with custom update behaviour
   check.update = function( value ){
     this.checked = value;
-    console.log(value);
   };
  
   // Add the new observer to our list of observers
@@ -124,3 +125,12 @@ function addNewObserver(){
   // Append the item to the container
   container.appendChild( check );
 }
+
+
+
+
+
+
+
+
+
