@@ -1,5 +1,5 @@
 # Pattern Design
-  study patterns design
+  flow
 
 ## installation
     clone the repo
