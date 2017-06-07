@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cat Clicker</title>
+</head>
+<body>
+
+  <ul id="cat-list"></ul>
+
+  <div id="cat">
+    <h2 id="cat-name"></h2>
+    <div id="cat-count"></div>
+    <img id="cat-img" src="" alt="cute cat">
+  </div>
+
+  <div class="cat-update">
+    <button class="js-admin">admin</button>
+    <div class="js-formUpdate" style="display: none;">
+      <label for="name">name</label>
+      <input type="text" class="js-nameUpdate">
+
+      <label for="img">urlimg</label>
+      <input type="text" class="js-imgUpdate">
+
+      <label for="clickCount"># clicks</label>
+      <input type="text" class="js-clicksUpdate">
+
+      <button class="js-cancel">Cancel</button>
+      <button class="js-save">Save</button>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
